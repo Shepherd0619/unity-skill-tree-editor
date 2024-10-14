@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 
@@ -47,6 +47,7 @@ namespace Adnc.SkillTree {
 			} 
 		}
 
+		[SerializeField]
 		string uuid;
 		public string Uuid {
 			get {

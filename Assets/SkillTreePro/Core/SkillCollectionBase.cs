@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
@@ -17,6 +17,7 @@ namespace Adnc.SkillTree {
 		public Rect windowRect;
 		[HideInInspector] public List<SkillCollectionBase> childSkills = new List<SkillCollectionBase>();
 
+		[SerializeField]
 		string uuid;
 		public string Uuid {
 			get {

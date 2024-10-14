@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +16,7 @@ namespace Adnc.SkillTree {
 		[Tooltip("What is the current skill level in this category?")]
 		public int skillLv = 0;
 
+		[SerializeField]
 		string uuid;
 		public string Uuid {
 			get {
