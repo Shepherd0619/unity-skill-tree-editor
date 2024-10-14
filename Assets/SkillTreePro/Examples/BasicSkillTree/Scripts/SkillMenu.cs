@@ -160,8 +160,8 @@ namespace Adnc.SkillTree.Example.MultiCategory {
 			// Adjust height to proper sizing
 			RectTransform rectTrans = go.GetComponent<RectTransform>();
 			Rect rect = rectTrans.rect;
-			rect.height = Vector3.Distance(start, end);
-			rectTrans.sizeDelta = new Vector2(rect.width, rect.height);
+            rect.height = Vector3.Distance(container.InverseTransformPoint(start), container.InverseTransformPoint(end));
+            rectTrans.sizeDelta = new Vector2(rect.width, rect.height);
 
 			// Adjust rotation and placement
 			go.transform.rotation = Helper.Rotate2D(start, end);
